@@ -1,0 +1,56 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.cocktail-card {
+    background-color: #f8f8f8;
+    margin: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cocktail-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cocktail-image {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.see-more-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pagination{
+    text-align: center;
+    margin: 30px;
+}
