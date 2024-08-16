@@ -8,7 +8,7 @@ import '../css/SearchPage.css';
 export function SearchPage(): ReactElement {
     const { searchResults = [], handleSearch } = useOutletContext<Ihandler>();
     const [query, setQuery] = useState<string>('');
-    const [currentPage, setCurrentPage] = useState<number>(0);
+    const [currentPage, setCurrentPage] = useState<number>(1);
 
     const resultsPerPage = 10; 
     const onSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -78,7 +78,7 @@ export function SearchPage(): ReactElement {
                         <Button 
                             handleButtonClick={handleNextPage} 
                             buttonText="Next" 
-                            disabled={currentPage === totalPages} 
+                            disabled={currentPage === totalPages || totalPages === 0} 
                         />
                     </div>
                 </div>
